@@ -1,0 +1,124 @@
+
+#section,div#conditions,#section>div#lea_sec,#contants{
+   width:100%;
+}
+#lea_service,#contant,#contact{
+     width:1180px;
+	 margin:0 auto;
+}
+#lea_service{
+   
+   overflow:hidden;
+   color:#fff;
+}
+#lea_service>li{
+   width:231px;
+   height:210px;
+   float:left;
+   border:1px solid #ddd;
+   padding:90px 30px 30px 10px;
+   box-sizing:border-box;
+   text-align:center;
+   background:url(../images/league/bg.jpg) no-repeat;
+}
+#lea_service>li:hover{
+   background:url(../images/league/bg.jpg) no-repeat 0 -210px;
+}
+#lea_service>li>div{
+       
+}
+#services{
+  text-align:center;
+    padding: 40px 0;
+}
+/*主体文字*/
+h2.theme{
+    color:#E50021;
+	text-align:center;
+	margin:10px;
+	line-height:32px;
+}
+/*加盟条件*/
+div#conditions{
+   background:#ECECEC;
+   /*margin:10px 0;*/
+   padding:30px 0;
+}
+div#conditions>div.condition{
+   margin:20px auto;
+   width:1180px;
+   height:240px;
+   background:url(../images/league/circle.jpg) no-repeat ;
+}
+div#conditions>div.condition>ul{
+  overflow:hidden;
+  color:#654523;;
+}
+div#conditions>div.condition>ul>li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 20px -15px 0 151px;
+	text-align:center;
+	padding:50px 20px;
+	font-size:16px;
+	box-sizing:border-box;
+}
+/*加盟支持*/
+#support{
+   background:#ECECEC;
+   padding:20px 0 ;
+}
+#support>.theme>b{
+   display:inline-block;
+   width:30px;
+   height:30px;
+   border-radius:50%;
+   background:#E50021;
+   margin-right:10px;
+   color:#fff;
+}
+#support>ul{
+   width:1180px;
+   margin:0 auto;
+   overflow:hidden;
+}
+#support>ul>li{
+   float:left;
+   width:290px;
+   height:170px;
+   padding:20px;
+   border:1px solid #fff;
+   box-sizing:border-box;
+   text-align:center;
+}
+#support>ul>li div.txt>p{
+   color:#654523;
+   font-size:18px;
+   margin-bottom:5px;
+   font-weight:bold;
+}
+/*加盟流程*/
+#contants{
+  background:#ECECEC;
+    padding: 30px 0;
+}
+#contant{
+  height:472px;
+  background:url(../images/league/jmlc.jpg) no-repeat;
+}
+#contant>ul{
+    width: 700px;
+    color: #DD4C40;
+    font-size: 16px;
+    margin: 77px auto;
+}
+#contant>ul>li{
+   margin-top: 28px;
+}
+/*加盟联系*/
+div#contact{
+   margin-top:10px ;
+   height:364px;
+   background:url(../images/league/jmfy.jpg) no-repeat;
+}

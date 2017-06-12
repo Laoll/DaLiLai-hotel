@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link href="css/index.css" type="text/css" rel="Stylesheet" />
+  <link href="css/login.css" type="text/css" rel="Stylesheet" />
+ </head>
+ <body>
+
+       <header>
+	          <div>
+							<a href="index.html"><img src="images/logo-2.jpg" alt=""></a> <span>会员登录</span>
+			  </div>
+
+	   </header>
+       <section>
+	        <div class="left">
+			    <img src="images\index.jpg" alt="">
+			</div>
+			<div class="login">
+			     <!--二维码小图标-->
+			     <span></span>
+				 <div id="check_box">
+                     <input type="radio" name="loginType" checked="checked" class="method_normal">普通登录
+					 <input type="radio" name="loginType"  class="method_phone">手机动态密码登录
+				 </div>
+				 <p id="alert">请输入账户信息</p>
+				 <!--普通登录-->
+
+				 <div id="normal">
+						 <ul id="nor_log">
+							<li class="name">
+							   <input name="uname"type="text" placeholder="请输入用户名">
+							   <span class="icon"></span>
+							</li>
+							<li class="pwd">
+							   <input  name="upwd" type="password" placeholder="密码">
+							   <span class="icon"></span>
+							</li>
+						 </ul>
+						 <!--<div class="codes">-->
+							<!--<input class="blur" type="text" value="请输入验证码">-->
+							<!--&lt;!&ndash;验证码&ndash;&gt;-->
+							<!--<div></div>-->
+							<!--<a class="change" href="javascript:codes();">换一张</a>-->
+						 <!--</div>-->
+					   <div class="codes">
+							 <input type="text" class="blur" placeholder="请输入验证码"/>
+							 <img src="data/code.php" alt="" class="code"/>
+						 </div>
+						 <div class="cookie">
+							<input type="checkbox" value="">两个月内记住我
+							<a href="">忘记密码</a>
+						 </div>
+				 </div>
+				 <!--手机电话登录-->
+			     <div id="phone_login">
+				     <div class="phone">
+					     <div>中国大陆+86<span></span></div>
+						 <input type="text"  value="请输入手机号">
+					 </div>
+					 <div class="pwd">
+					    <input type="text" value="请输入动态密码" >
+						<div>获取动态密码</div>
+					 </div>
+					 <input type="checkbox" name="" id="">记住我
+				 </div>
+				 <div class="log" id="bt_login">登 录</div>
+			     <div class="other">
+				    其他账号登录
+					<a href="">qq</a>
+					<a href="">支付宝</a>
+					<a href="">新浪微博</a>
+					<a href="">人人网</a>
+				 </div>
+			</div>
+			<div class="reg">
+			   <a href="regsiter.html">立即注册 &gt;&gt;</a>
+			</div>
+	   </section>
+       <footer class="clear">
+	       <p class="signs">
+		      <a class="ipa" href=""><span></span>iPhone / iPad</a>
+		      <a class="android" href=""><span></span>Android</a>
+		      <a class="windows" href=""><span></span>Windows</a>
+		      <a class="phone" href=""><span></span>其他手机端</a>
+		   </p>
+		   <p>
+		      <a href="">关于我们</a>|
+			  <a href="">加盟大利来</a>|
+			  <a href="">代理合作</a>|
+			  <a href="">广告合作</a>|
+			  <a href="">联系我们</a>
+		   </p>
+	   </footer>
+	  <script src="js/jquery-1.11.3.js"></script>
+	  <script src="js/login.js"></script>
+ </body>
+</html>

@@ -1,0 +1,442 @@
+section{
+  background:#EEEEEE;
+}
+#nav{
+   position:relative;
+   z-index:100;
+}
+#food_index{
+   position:relative;
+   height:359px;
+   background:url(../images/meal/c_index.jpg) no-repeat;
+}
+
+
+#other-chioose{
+   width:1200px;
+   margin:0 auto;
+}
+#tot_menu{
+   margin:20px 0;
+   overflow:hidden;
+ }
+#tot_menu>li{
+   float:left;
+   
+
+}
+#tot_menu>li>a{
+    display:block;
+	padding:5px;
+    width:120px;
+   height:120px;
+   background:url(../images/meal/bg01.png) no-repeat -35px -38px;
+ }
+ #tot_menu>li.core2>a{
+   background-position:-190px -38px;
+ }
+  #tot_menu>li.core3>a{
+   background-position:-347px -38px;
+ }
+  #tot_menu>li.core4>a{
+   background-position:-35px -189px;
+ }
+  #tot_menu>li.core5>a{
+   background-position:-190px -189px;
+ }
+  #tot_menu>li.core6>a{
+   background-position:-347px -189px;
+ }
+  #tot_menu>li.core7>a{
+   background-position:-35px -339px;
+ }
+  #tot_menu>li.core8>a{
+   background-position:-190px -339px;
+ }
+  #tot_menu>li.core9>a{
+   background-position:-347px -339px;
+ }
+  
+ /*精品美食*/
+ #boutique{
+   overflow:hidden;
+ }
+ p.theme{
+    background: #000;
+    padding: 5px;
+    font-size: 22px;
+    color: #fff;
+    width: 127px;
+    height: 25px;
+    line-height: 25px;
+    margin: 10px 0;
+  }
+ p.theme>b{
+    color:red;
+	
+ }
+ #boutique>div.text{
+    margin: 10px auto;
+    width: 1000px
+   }
+ #boutique>div.text>p{
+    font-weight: bold;
+    font-size: 27px;
+    text-align: center;
+    margin: 10px;
+ }
+ #boutique>div.text>div{
+    font-size: 19px;
+    text-align: center;
+    line-height: 30px;
+
+ }
+ #boutique>ul{
+     height:264px;
+     position:relative;
+ }
+ #boutique>ul>li{
+     width:200px;
+    overflow:hidden;
+    float:left;
+	position:relative;
+	text-align:center;
+	transition: width 2s;
+
+ }
+ #boutique>ul>li.b_wid{
+  width:400px;
+  transition: width 2s;
+ }
+ 
+#boutique>ul>li>div.shade{
+  background:#000;
+  opacity:0.7;
+  width:100%;
+  height:100%;
+  position:absolute;
+  left:0;
+  top:0;
+}
+/*新品推荐*/
+#new_products>ul{
+  overflow:hidden;
+}
+#new_products>ul>li{
+   float:left;
+}
+/*热销菜系*/
+#hot_sell{
+   overflow: hidden;
+    background: #eeeeee;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+#hot_sell div.left_info{
+   float:left;
+   width:400px;
+   text-align:center;
+   position:relative;
+}
+#hot_sell div.left_info>div{
+    width: 300px;
+	height:200px;
+    text-align: center;
+    font-size: 20px;
+    color: #848484;
+    position: absolute;
+    left: 71px;
+    line-height: 30px;
+    top: 62px;
+	background:#EEEEEE;
+	
+}
+#hot_sell div.left_info>a{
+      display: block;
+    width: 150px;
+    height: 40px;
+    border: 2px solid #DD4C40;
+    border-radius: 20px;
+    margin: 0 auto;
+    line-height: 40px;
+    font-size: 20px;
+    color: #DD4C40;
+    position: absolute;
+    left: 122px;
+    top: 213px;
+    font-weight: bold;
+}
+#hot_sell div.left_info>p{
+    margin-top:5px;
+   text-align:center;
+   font-size:30px;
+   color:#DD4C40;
+   font-weight:bold;
+}
+#hot_sell div.right_more{
+   float:right;
+   width:700px;
+}
+#hot_sell div.right_more>ul.type_list{
+    margin:0 auto;
+}
+#hot_sell div.right_more>ul.type_list>li{
+   float:left;
+   width:100px;
+   height:30px;
+   line-height:30px;
+   text-align:center;
+   border:1px solid #ddd;
+   margin:5px;
+   font-weight:bold;
+   cursor:pointer;
+}
+#hot_sell div.right_more>ul.type_list>li.current{
+   background:#DD4C40;
+   color:#fff;
+}
+#hot_sell div.right_more>ul.chioce{
+  overflow:hidden;
+  clear:both;
+}
+#hot_sell div.right_more>ul.chioce>li{
+   float: left;
+    margin: 11px 33px 5px 0;
+}
+ /*西餐*/
+ #westerm_food{
+    margin-top:20px;
+	overflow:hidden;
+ }
+  #westerm_food>div.left_ban{
+    float:left;
+	width:260px;
+  }
+ 
+#westerm_food>div.right_ban{
+    float:right;
+	width:900px;
+  }
+#westerm_food>div.right_ban>dl{
+    width: 200px;
+    float: left;
+    margin: 10px 25px 5px 0;
+	
+ }
+ #westerm_food>div.right_ban dl:last-child{
+    margin-right: 0;
+ }
+  #westerm_food>div.right_ban>dl>dd{
+  text-align:center;
+  margin:0;
+  position:relative;
+  
+  }
+ #westerm_food>div.right_ban>dl>dd>div.sub_pay{
+   position:absolute;
+   left:48px;
+   bottom:10px;
+ }
+ #westerm_food>div.right_ban>dl>dd>div.sub_pay>a{
+    display: block;
+    width: 100px;
+    height: 30px;
+    background: #DD4C40;
+    color: #fff;
+    line-height: 30px;
+    font-weight: bold;
+    border-radius: 9px;
+ }
+  #westerm_food>div.right_ban>dl>dt{
+    background:#ddd;
+	padding:5px;
+	height:100px;
+  }
+  #westerm_food>div.right_ban>dl>dt>p{
+  color:#CC0000;
+  font-weight:bold;
+  }
+
+  /**/
+  #cainter{
+     width:1200px;
+	 margin:20px auto;
+	 /*测试代码*/
+	
+	 min-height:40px;
+	 padding:20px 0;
+   }
+  ul.tab{
+      border-top:1px solid #DD4C40;
+	  border-bottom:1px solid #dd4c40;
+	   border-left:1px solid #dd4c40;
+	  overflow:hidden;
+   }
+    #cainter>ul.tab>li{
+	  float:left;
+	  height:40px;
+	  line-height:40px;
+	  font-size:16px;
+	  width:100px;
+	 
+	}
+	 #cainter>ul.tab>li>a{
+	   display:block;
+	   height:100%;
+	   width:100%;
+	   text-align:center;
+	 }
+	
+	/*#cainter>ul.tab>li:hover a{*/
+	   /*background:rgba(0,0,0,0.9);*/
+	  /*color:#fff;*/
+	/*}*/
+	#cainter>ul.tab>li.active,#cainter>ul.tab>li:hover{
+	  background:#DD4C40;
+	  color:#fff;
+	}
+#cainter>ul.tab>li.active>a,#cainter>ul.tab>li:hover>a{
+  color:#fff;
+}
+	#cainter>div.details{
+	  margin:10px 0;
+	}
+	#cainter>div.details>div{
+	  display:inline-block;
+	  background:#fff;
+	  margin:13px 15px 13px  0;
+	  width:285px;
+	  height:350px;
+	  overflow:hidden;
+	  position:relative;
+	}
+#cainter>div.details>div:nth-child(4n){
+  margin-right:0;
+}
+	#cainter>div.details>div>div#type_title{
+	  width:100%;
+	  height:35px;
+	  background:rgba(0,0,0,0.7);
+	  position:absolute;
+	  bottom:0;
+	  left:0;
+	  color:#fff;
+	  padding:5px;
+	  border-left:8px solid #dd4c40;
+	}
+	
+	#cainter>div.details>div>img:hover{
+	  transform:scale(1.1);
+	}
+	#cainter>div.details>div>p{
+	  height:40px;
+	  background:#DD4C40;
+	  line-height:40px;
+	  color:#fff;
+	  font-size:18px;
+	}
+	#cainter>div.details>div>p>a{
+	  float:right;
+	}
+#type_title>span{
+  color:#DD4C40;
+  float:right;
+  font-size: 18px;
+  font-weight: 800;
+}
+/*摸态框*/
+#malog{
+  position:fixed;
+  left:0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height:100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 100;
+  display: none;
+  overflow: hidden;
+}
+/*遮罩框*/
+.f_infos{
+  position: fixed;
+  left:500px;
+  top:200px;
+  background: #FFFFFF;
+  width:600px;
+  height:290px;
+  border:1px solid #ccc;
+  overflow:hidden;
+}
+.f_infos>div{
+  float:left;
+  padding:20px;
+}
+.f_infos>div.info{
+width:340px;
+}
+.f_infos img{
+  height:250px;
+}
+.f_infos ul>li{
+  margin-bottom:5px;
+  line-height:28px;
+}
+.f_infos ul>li>span{
+  display:inline-block;
+  color:#DD4C40;
+  font-weight: bold;
+  width:50px;
+  text-align: right;
+  margin-right: 5px;
+}
+.f_infos ul>li>b{
+  padding: 0 5px;
+  font-size:16px;
+  border:1px solid #ddd;
+  cursor: pointer;
+}
+.f_infos ul>li>input{
+  margin:0 5px;
+  width:50px;
+  height:20px;
+  vertical-align: middle;
+
+}
+.f_infos ul>li button{
+  height:32px;
+  width:100px;
+  border-radius: 5px;
+  border:2px solid #DD4C40;
+  font-size:14px;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.f_infos ul>li>div.intro{
+  display:inline-block;
+  vertical-align: top;
+  border-top:2px dashed #dddddd;
+  border-bottom:2px dashed #ddd;
+  width: 100%;
+}
+.f_infos ul>li.price{
+  color:#DD4C40;
+}
+.f_infos>span.close{
+  margin:2px;
+  float:right;
+  width:12px;
+  height:12px;
+  background:url(../images/bg_hotel_icon.png) no-repeat -32px -507px;
+}
+.add_cart{
+
+  background:#F9F9F9;
+  color:#DD4C40;
+}
+.booking{
+  background: #DD4C40;
+  color:#fff;
+}

@@ -1,0 +1,203 @@
+@font_30:30px;
+@font_16:16px;
+@font_14:14px;
+.lf{
+  float: left;
+}
+.rt{
+  float: right;
+}
+.leftnav{
+  h2{
+    a{
+      display: block;
+      width: 100%;
+      position: relative;
+    }
+  }
+}
+.room_status{
+  .room_items{
+    width: 15%;
+    min-height: 100px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    margin: 8px 7px;
+    h2{
+      font-size: @font_30;
+      line-height: 40px;
+    }
+    p {
+       font-size: @font_16;
+    }
+    .g_name{
+      font-size: @font_14;
+    }
+  }
+  .booking{
+    background: #ff0000;
+  }
+  .dy{
+    background: #cccccc;
+  }
+}
+#all_news{
+  img{
+    width: 150px;
+  }
+
+}
+em,i{
+  font-style: normal;
+  text-align: center;
+}
+.search li:last-child{
+  .rt;
+}
+
+td{
+  textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+  }
+}
+//管理员类型
+.admin_detail{
+  float: right;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 20px 10px;
+}
+//管理员权限
+.leftnav .super_admin{
+  display: none ;
+}
+.super_admin+ul{
+  display: none !important;
+}
+//修改密码
+.person_info{
+   li{
+     margin: 10px;
+     font-size: 18px;
+     label{
+       display: inline-block;
+       width: 100px;
+       text-align: right;
+       padding-right: 10px;
+     }
+     input{
+       height: 42px;
+       background: #fff;
+       width: 250px;
+       border-radius: 5px;
+       border: 1px solid #167FB6;
+       padding: 5px;
+     }
+     .success{
+       border: 1px solid #22CC77;
+     }
+   }
+}
+
+.btn_update{
+  color: #0099FF;
+}
+
+  .booking{
+    background:#f54646;
+  }
+  .empty{
+    background: #DE46D6;
+  }
+  .service{
+    background:#979892;
+  }
+  .dirty{
+    background: #ADBECF ;
+  }
+  .room_items{
+    position: relative;
+    height: 147px;
+    p.name{
+      height: 30px;
+    }
+  }
+.icon_status{
+  position: absolute;
+  top:2px;
+  display: block;
+  width: 40px;
+  height: 30px;
+  border-radius: 0 20px 20px 0px;
+  background: #979892;
+}
+#all_dish{
+  img{
+    width: 100px;
+  }
+}
+//页码
+.page{
+  display: inline-block;
+}
+.current{
+  background:#0ae !important;
+  color: #fff;
+}
+td{
+  img{
+    width: 150px;
+  }
+}
+#all_dish{
+  input[name='fname'],
+  input[name='fname'],
+  input[name='type'],
+  input[name='fprice']{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #eee;
+    text-align: center;
+  }
+
+}
+
+.order_wai{
+  position: relative;
+}
+.wait_pro{
+  position: absolute;
+  right: 48px;
+  top:-1px;
+  width: 20px;
+  height: 20px;
+  border-radius:50% ;
+  background: #ff0000;
+  color: #fff;
+  text-align: center;
+  font-style: normal;
+}
+.form_group{
+  margin: 20px 0;
+}
+.malog{
+  width: 400px;
+  position: fixed;
+  display:none;
+  top:200px;
+  left: 500px;
+  background: #fff;
+  border:1px solid #cccccc;
+  padding: 0 20px;
+  h2{
+    line-height: 40px;
+    text-align: center;
+  }
+}
+.update{
+  display: none;
+}

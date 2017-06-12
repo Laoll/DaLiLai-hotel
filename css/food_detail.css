@@ -1,0 +1,56 @@
+#section{
+  width:1200px;
+  margin:0 auto;
+}
+#section>p{
+  padding:10px 0;
+}
+.panel{
+  float:left;
+  margin-right:20px;
+  width:500px;
+  overflow:hidden;
+}
+.r_infos{
+  float:left;
+
+}
+.r_infos>div.fintr{
+  padding:10px ;
+  margin:20px 0;
+  border-top:1px dashed #00BEFF;
+  border-bottom:1px dashed #00BEFF;
+}
+.r_infos button{
+  height:32px;
+  width:100px;
+  border-radius: 5px;
+  border:2px solid #DD4C40;
+  font-size:14px;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+  outline: none;
+}
+.make{
+  height:150px;
+  background: #F7B0A5;
+  padding:10px;
+  border-radius: 2px;
+}
+p{
+  margin:15px 0;
+}
+.price>b{
+  color:#DD4C40;
+  font-size: 18px;
+}
+.add_cart{
+
+  background:#F9F9F9;
+  color:#DD4C40;
+}
+.booking{
+  background: #DD4C40;
+  color:#fff;
+}

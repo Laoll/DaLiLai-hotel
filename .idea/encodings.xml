@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/css/index.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/cart_detail.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/food_select.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/select_check_detail.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/about.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/baidu_map.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/catering.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/order.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/room_detail.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/room_order.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/shoppingCart.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/manage/data/add_dish.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/manage/data/add_news.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/manage/data/select_room_num.php" charset="UTF-8" />
+  </component>
+</project>

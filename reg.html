@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    .container {
+      width: 600px;
+      margin: 100px auto;
+    }
+    .container > h2 {
+      text-align: center;
+    }
+    .panel {
+      border: 1px solid #aaa;
+      border-radius: 2px;
+      box-shadow: 0 0 5px #aaa;
+      min-height: 100px;
+      padding: 1.2em .6em;
+    }
+    .form-group {
+      margin-bottom:18px;
+    }
+    .form-group > label {
+      display: inline-block;
+      width: 80px;
+      text-align: right;
+    }
+    .form-group > input {
+      width: 250px;
+      height:28px;
+      padding: 4px;
+      border-radius: 2px;
+      border: 1px solid #aaa;
+    }
+    .form-group > span {
+      width: 270px;
+      color: #fff;
+      padding: 4px;
+      border-radius: 2px;;
+    }
+    .msg-default {
+      background-color: #999;
+    }
+    .msg-error {
+      background-color: #d00;
+    }
+    .msg-success {
+      background-color: #0d0;
+    }
+    .hidden {
+      display: none;
+    }
+    input[type="button"] {
+      background: #DD4C40;
+      width: 260px;
+      height:32px;
+      color: #fff;
+      font-size:16px;
+    }
+    .form-group .btn_default{
+      background: rgba(221, 76, 64, 0.46);
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>注册新用户</h2>
+  <div class="panel">
+    <form id="user_info">
+      <div class="form-group">
+        <label for="uname">用户名：</label>
+        <input required minlength="3" maxlength="9" type="text" placeholder="请输入用户名" autofocus name="uname" id="uname"/>
+        <span class="msg-default">用户名长度在3到9位之间</span>
+      </div>
+      <div class="form-group">
+        <label for="upwd">密码：</label>
+        <input type="password" placeholder="请输入密码" name="upwd" id="upwd"/>
+        <span class="msg-default hidden">密码长度在6到12位之间</span>
+      </div>
+      <div class="form-group">
+        <label for="upwd2">确认密码：</label>
+        <input type="password" placeholder="再次输入密码" name="upwd2" id="upwd2"/>
+        <span class="msg-default hidden">密码长度在6到12位之间</span>
+      </div>
+      <div class="form-group">
+        <label for="uemail">邮箱：</label>
+        <input required type="email" placeholder="请输入邮箱地址" name="uemail" id="uemail"/>
+        <span class="msg-default hidden">请输入合法的邮箱地址</span>
+      </div>
+      <div class="form-group">
+        <label for="uphone">手机：</label>
+        <input required type="tel" placeholder="请输入手机号码" name="uphone" id="uphone"/>
+        <span class="msg-default hidden">请输入合法的手机号码</span>
+      </div>
+      <div class="form-group">
+        <label></label>
+        <input type="button" value="提交注册信息" id="btn_reg" />
+      </div>
+    </form>
+  </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+  /*1.对用户名进行验证*/
+  var login=0;
+  uname.onblur = function(){
+    var val=this.value;
+    console.log(this.value);
+    var result=test(val);
+    console.log(test(val));
+    if(this.validity.valueMissing){
+      this.nextElementSibling.innerHTML = '用户名不能为空';
+      this.nextElementSibling.className = 'msg-error';
+      login=0;
+      this.setCustomValidity('用户名不能为空');
+    }else if(this.validity.tooShort){
+      this.nextElementSibling.innerHTML = '用户名不能少于3位';
+      this.nextElementSibling.className = 'msg-error';
+      login=0;
+      this.setCustomValidity('用户名不能少于3位');
+    }else {
+      this.nextElementSibling.innerHTML = '用户名格式正确';
+      this.nextElementSibling.className = 'msg-success';
+      login=1;
+      this.setCustomValidity('');
+    }
+
+  }
+
+//  uname.onblur = function(){
+//    if(this.validity.valueMissing){
+//      this.nextElementSibling.innerHTML = '用户名不能为空';
+//      this.nextElementSibling.className = 'msg-error';
+//      login=0;
+//      this.setCustomValidity('用户名不能为空');
+//    }else if(this.validity.tooShort){
+//      this.nextElementSibling.innerHTML = '用户名不能少于3位';
+//      this.nextElementSibling.className = 'msg-error';
+//      login=0;
+//      this.setCustomValidity('用户名不能少于3位');
+//    }else {
+//      this.nextElementSibling.innerHTML = '用户名格式正确';
+//      this.nextElementSibling.className = 'msg-success';
+//      login=1;
+//      this.setCustomValidity('');
+//    }
+//
+//  }
+  //2.对密码进行验证
+  upwd.onfocus = function(){
+    this.nextElementSibling.innerHTML = '密码至少为6位数字或者字符';
+    this.nextElementSibling.className = 'msg-default';
+    login=0;
+  }
+  /*3.对邮箱地址进行验证*/
+  uemail.onblur = function(){
+    if(this.validity.valueMissing){
+      this.nextElementSibling.innerHTML = '邮箱不能为空';
+      this.nextElementSibling.className = 'msg-error';
+      login=0;
+      this.setCustomValidity('邮箱不能为空');
+    }else if(this.validity.typeMismatch){
+      this.nextElementSibling.innerHTML = '邮箱格式不正确';
+      login=0;
+      this.nextElementSibling.className = 'msg-error';
+      this.setCustomValidity('邮箱格式不正确');
+    }else {
+      this.nextElementSibling.innerHTML = '邮箱格式正确';
+      this.nextElementSibling.className = 'msg-success';
+      login=1;
+      this.setCustomValidity('');
+    }
+  }
+  uemail.onfocus = function(){
+    this.nextElementSibling.innerHTML = '请输入合法的邮箱地址';
+    this.nextElementSibling.className = 'msg-default';
+    login=0;
+  }
+  uphone.onblur = function(){
+    if(this.validity.valueMissing){
+      this.nextElementSibling.innerHTML = '电话号码不能为空';
+      this.nextElementSibling.className = 'msg-error';
+      login=0;
+      this.setCustomValidity('电话号码不能为空');
+    }else if(this.validity.typeMismatch){
+      this.nextElementSibling.innerHTML = '电话号码格式不正确';
+      this.nextElementSibling.className = 'msg-error';
+      login=0;
+      this.setCustomValidity('电话号码格式不正确');
+    }else {
+      this.nextElementSibling.innerHTML = '格式正确';
+      this.nextElementSibling.className = 'msg-success';
+      login=1;
+      this.setCustomValidity('');
+    }
+  }
+  uphone.onfocus = function(){
+    this.nextElementSibling.innerHTML = '请输入合法的手机号码';
+    this.nextElementSibling.className = 'msg-default';
+    login=0;
+  }
+  //确认密码
+  upwd2.onblur=function() {
+    if (upwd2.value != upwd.value) {
+      this.nextElementSibling.innerHTML = '两次密码输入不一致';
+      login=0;
+      this.nextElementSibling.className = 'msg-error';
+    } else if (upwd2.value == upwd.value) {
+      this.nextElementSibling.innerHTML = '输入正确';
+      this.nextElementSibling.className = 'msg-success';
+      login=1;
+    }
+  }
+  $('#btn_reg').click(function(){
+    //表单序列化，获得所有的用户输入
+    var data = $('#user_info').serialize();
+
+    //异步提交请求数据
+    $.ajax({
+      type: 'POST',
+      url: 'data/user_insert.php',
+      data: data,
+      success: function(result){
+        console.log('开始处理服务器端返回的注册结果')
+        //console.log(result);
+        if(result.msg=='succ'){
+          alert('注册成功！');
+//          location.href='login.html';
+        }else {
+          alert('注册失败！')
+        }
+      }
+    });
+  })
+  function test(data){
+    $.ajax({
+      type:"POST",
+      url:'data/user_check.php',
+      data:{data:data},
+      success:function(msg){
+        return msg;
+      }
+
+    })
+  }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+<!--- 页头--->
+<div id="c_header"></div>
+<!----主体-->
+<div id="section">
+    <!--客房信息-->
+    <div class="hotel_inf_w">
+
+        <div class="hotel_roominfobox">
+            <!--<a href="#"><img src="images/hotel/room01_l.jpg" alt=""/></a>-->
+            <!--<div class="info">-->
+            <!--<h2>豪华双人房</h2>-->
+            <!--豪华双人房&#45;&#45;&#45;&#45;预定-->
+            <!--</div>-->
+            <!--<ul class="hotel_detail">-->
+            <!--<li><span>床型:</span>双床</li>-->
+            <!--<li><span>面积:</span>18平方米</li>-->
+            <!--<li><span>宽带:</span>无线/宽带</li>-->
+            <!--<li><span>早餐:</span>无早</li>-->
+            <!--<li><span>可住:</span>2人</li>-->
+            <!--<li><span>其他:</span>双床：90cm</li>-->
+            <!--</ul>-->
+        </div>
+        <div class="jump">
+            <a href="room_detail.html">返回查看详情信息</a>
+            <a href="reservation.html">更多房型</a>
+        </div>
+    </div>
+    <!--预定信息-->
+    <div class="book_info">
+        <form id="order_info">
+            <ul>
+                <input type="hidden" name="rid" value=""/>
+                <li>
+                    <h3>预定信息</h3>
+
+                    <div class="info_group">
+                        <label>入住时间</label><input type="date" name="ltime" value="2016-11-23"/>
+                    </div>
+                    <div class="info_group num">
+                        <label>房间数量</label>
+                        <span class="sub">-</span>
+                        <input type="text" name="num" value="1"/>
+                        <span class="add">+</span>
+
+                        <div class="msg"></div>
+                    </div>
+                    <div class="info_group">
+                        <label>房费总计</label><span class="total">￥400</span>
+                        <input type="hidden" name="price" value="0"/>
+                    </div>
+                </li>
+                <li>
+                    <h3>入住信息</h3>
+
+                    <div class="info_group">
+                        <label>姓名</label><input type="text" name="orderName" id="orderName"/><span class="msg"></span>
+                    </div>
+                    <div class="info_group">
+                        <label>电话</label><input type="text" name="phone" id="phone"/><span class="msg"></span>
+                    </div>
+                    <div class="info_group">
+                        <label for="massage">留言信息</label>
+                         <textarea id="massage" name="massage">
+
+                         </textarea>
+                    </div>
+                    <div class="info_group">
+                        <label>支付方式</label>
+                        <input type="radio" name="payment" value="1" checked/>入店支付
+                        <input type="radio" name="payment" value="2"/>支付宝
+                        <input type="radio" name="payment" value="3"/>银联
+                    </div>
+
+                </li>
+                <li>
+                    <div class="msg">
+                        预定须知:请携带好本人的身份证，办理入住手续，本店办理入住需要在前台缴费押金 ￥200
+
+                    </div>
+                    <input type="hidden" name="uname" value="0">
+                    <input type="hidden" name="roomList" value="0"/>
+                    <input type="hidden" name="foodList" value="[]"/>
+                    <div id="btn_booking">确认预定</div>
+
+                </li>
+            </ul>
+        </form>
+    </div>
+
+    <div class="malog">
+        <div class="message">
+            <p class="msgs"></p>
+            <p>您可以在 <a href="myOrder.html#order">我的订单</a>查看详情</p>
+            <p>系统会在<span class="num">5</span>秒后跳转会 <a href="reservation.html">菜单列表</a></p>
+        </div>
+    </div>
+
+</div>
+<!----页底--->
+<div id="c_footer"></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/room_order.js"></script>
+<script src="js/intro.js"></script>
+</body>
+</html>

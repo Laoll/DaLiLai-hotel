@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/index.css"/>
+  <style>
+      #contain{
+        padding: 10px 0;
+      }
+      #contain>ul.tabs{
+        width: 163px;
+        background: #EDEDED;
+        float: left;
+      }
+      #contain>ul.tabs>li{
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        border:1px solid #999999;
+      }
+      #contain>ul.tabs>li:first-child{
+        border-left-color:#DD52FF ;
+        border-left-width: 5px;
+      }
+      #contain>ul.tabs>li:last-child{
+        border-left-color:#FF971A ;
+        border-left-width: 5px;
+      }
+      .main{
+        float:left;
+        border:1px solid #999999;
+        background:#EDEDED;
+        width: 1000px;
+        min-height: 50px;
+        margin-left: 30px;
+      }
+      .main> ul.breadcrumb{
+        overflow: hidden;
+        background: #EDEDED;
+        padding:0 5px ;
+      }
+   .main> ul.breadcrumb>li{
+      float:left;
+
+    }
+      div.change{
+        padding: 10px;
+      }
+    div.change>a{
+      float: left;
+
+    }
+      div.change>a:last-child{
+        float: right;
+      }
+    .main_box{
+      text-align: center;
+    }
+      .main_box img{
+        max-width: 600px;
+      }
+      .main_box p.title{
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+      }
+  </style>
+</head>
+<body>
+   <!--头部-->
+   <div id="c_header"></div>
+   <!--主体-->
+   <div id="contain">
+     <!--tab选项卡-->
+     <ul class="tabs">
+       <li><a href="#" class="active">店面资讯</a></li>
+       <li><a href="#order">招聘资讯</a></li>
+
+     </ul>
+
+     <div class="main">
+        <!--面包导航-->
+       <ul class="breadcrumb">
+         <li><a href="news.html">新闻资讯</a>/</li>
+         <li>店面资讯</li>
+       </ul>
+       <!--主体-->
+       <div class="main_box">
+             <p class="title">新闻标题</p>
+             <div>
+               <img src="" alt=""/>
+             </div>
+              <span>时间:</span>
+              <span>内容：</span>
+       </div>
+       <div class="change">
+         <a href="#" class="prev">上一篇</a>
+         <a href="#" class="next">下一篇</a>
+       </div>
+     </div>
+   </div>
+   <!--底部-->
+    <div id="c_footer"></div>
+   <script src="js/jquery-1.11.3.js"></script>
+   <script src="js/intro.js"></script>
+   <script>
+     $("#c_header").load("data/head/header.php",function(){
+       navText("最新资讯");
+       loginName();
+     });
+     var news=function(){
+       var newId=sessionStorage['newId'];
+       $.ajax({
+           url:"data/select_newbyId.php",
+           data:{newId:newId},
+           success:function(data){
+             var news=data['news'];
+             console.log(news);
+             var html="";
+             html+=`
+                    <p class="title">${news.newTitle}</p>
+             <div>
+               <img src="${news.newImg}" alt=""/>
+             </div>
+               <div><span>内容：${news.details}</span></div>
+              <div><span>时间:${news.relTime}</span></div>
+
+             `;
+             $(".main_box").html(html);
+             var html='';
+             html+=`
+                 <a href="#" class="prev">上一篇</a>
+         <a href="#" class="next" data-max="${data.recordCount}">下一篇</a>
+             `;
+             $(".change").html(html);
+           }
+       })
+     }
+     news();
+     $("div.change").on("click","a",function(e){
+       e.preventDefault();
+       var newId=sessionStorage['newId'];
+       if($(this).hasClass("prev")){
+         if(newId>1){
+           newId--;
+         }
+       }else if($(this).hasClass("next")){
+         var max=$(this).data("max");
+         if(newId<max){
+           newId++;
+         }
+       }
+       sessionStorage["newId"]=newId;
+       news();
+     })
+   </script>
+</body>
+</html>

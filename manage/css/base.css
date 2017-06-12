@@ -1,0 +1,194 @@
+.lf {
+  float: left;
+}
+.rt {
+  float: right;
+}
+.leftnav h2 a {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.room_status .room_items {
+  width: 15%;
+  min-height: 100px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  margin: 8px 7px;
+}
+.room_status .room_items h2 {
+  font-size: 30px;
+  line-height: 40px;
+}
+.room_status .room_items p {
+  font-size: 16px;
+}
+.room_status .room_items .g_name {
+  font-size: 14px;
+}
+.room_status .booking {
+  background: #ff0000;
+}
+.room_status .dy {
+  background: #cccccc;
+}
+#all_news img {
+  width: 150px;
+}
+em,
+i {
+  font-style: normal;
+  text-align: center;
+}
+.search li:last-child {
+  float: right;
+}
+td textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-align: center;
+}
+.admin_detail {
+  float: right;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 20px 10px;
+}
+.leftnav .super_admin {
+  display: none ;
+}
+.super_admin + ul {
+  display: none !important;
+}
+.person_info li {
+  margin: 10px;
+  font-size: 18px;
+}
+.person_info li label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  padding-right: 10px;
+}
+.person_info li input {
+  height: 42px;
+  background: #fff;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #167FB6;
+  padding: 5px;
+}
+.person_info li .success {
+  border: 1px solid #22CC77;
+}
+.btn_update {
+  color: #0099FF;
+}
+.booking {
+  background: #f54646;
+}
+.empty {
+  background: #DE46D6;
+}
+.service {
+  background: #979892;
+}
+.dirty {
+  background: #ADBECF ;
+}
+.room_items {
+  position: relative;
+  height: 147px;
+}
+.room_items p.name {
+  height: 30px;
+}
+.icon_status {
+  position: absolute;
+  top: 2px;
+  display: block;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  color: #EE3333;
+  font-weight: bold;
+  border-radius: 0 20px 20px 0px;
+  background: #979892;
+}
+}
+#all_dish img {
+  width: 100px;
+}
+.page {
+  display: inline-block;
+}
+.current {
+  background: #0ae !important;
+  color: #fff;
+}
+td img {
+  width: 150px;
+}
+#all_dish input[name='fname'],
+#all_dish input[name='fname'],
+#all_dish input[name='type'],
+#all_dish input[name='fprice'] {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #eee;
+  text-align: center;
+}
+.order_wai {
+  position: relative;
+}
+.wait_pro {
+  position: absolute;
+  right: 48px;
+  top: -1px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50% ;
+  background: #ff0000;
+  color: #fff;
+  text-align: center;
+  font-style: normal;
+}
+.form_group {
+  margin: 20px 0;
+}
+.malog {
+  width: 400px;
+  position: fixed;
+  display: none;
+  top: 200px;
+  left: 500px;
+  background: #fff;
+  border: 1px solid #cccccc;
+  padding: 40px;
+}
+.malog h2 {
+  line-height: 40px;
+  text-align: center;
+}
+.update {
+  display: none;
+}
+.upadmin_form .tips{
+  line-height: 42px;
+  margin-left:248px;
+  color: #DD4C40;
+  font-size: 16px;
+}
+
+.button-red-focus{
+  color: #fff;
+  border-color: #f00;
+  background-color: #f00;
+}
+.button-green-focus{
+  color: #fff;
+  border-color: #5d8;
+  background-color: #5d8;
+}

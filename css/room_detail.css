@@ -1,0 +1,443 @@
+
+#section{
+  width:1200px;
+  margin:0 auto;
+}
+#section>p{
+  padding:10px 0;
+}
+
+/*客房*/
+#guest_rooms{
+  margin:10px 0;
+  border:1px solid #ddd;
+}
+
+#guest_rooms>div.room_pic{
+  float:left;
+  padding:10px ;
+  width:620px;
+  height:420px;
+}
+#guest_rooms>div.room_pic img{
+  width:600px;
+  height: 400px;
+}
+#guest_rooms>div.room_info{
+  float:left;
+  padding:10px;
+  width:560px;
+  height:420px;
+  margin-left:10px;
+}
+#guest_rooms>div.room_info h2{
+  color:#DD4C40;
+}
+#guest_rooms>div.room_info button{
+  /*width: 80px;*/
+  height: 30px;
+  background: #DD4C40;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 3px;
+  line-height: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+#guest_rooms>div.room_info li.num button{
+  background: #EDEFED;
+  width:30px;
+  height:30px;
+  border:0;
+  outline: 0;
+  color:#000;
+}
+#guest_rooms>div.room_info li.num button:hover{
+  background: #F9F9F9;
+}
+#guest_rooms>div.room_info li.num input{
+  width:30px;
+  height:30px;
+  box-sizing: border-box;
+  text-align: center;
+}
+#guest_rooms>div.room_info li{
+  margin:15px 0;
+}
+#guest_rooms>div.room_info li span{
+  display: inline-block;
+  width:60px;
+  text-align: right;
+  /*font-weight: bold;*/
+  font-size: 16px;
+}
+#guest_rooms>div.room_info p{
+  padding:10px 0 0 60px;
+}
+#guest_rooms>div.room_info p>b{
+  display: inline-block;
+  width:22px;
+  height:20px;
+  margin:0 10px;
+  vertical-align: middle;
+  background: url("../images/bg_hotel_icon.png") no-repeat -28px -55px;
+}
+#guest_rooms>div.room_info p>b.wifi{
+  background-position: -28px -55px;
+}
+#guest_rooms>div.room_info p>b.park{
+  background-position: -3px -104px;
+}
+#guest_rooms>div.room_info p>b.eat{
+  background-position: -28px -103px;
+}
+#guest_rooms>div.room_info p>b.TV{
+  background-position: -3px -154px;
+}
+#guest_rooms>div.chioce>input{
+  margin-right:10px;
+  height:26px;
+}
+#guest_rooms>div.chioce>input[type='submit']{
+  text-align: center;
+  border:none;
+  background:#DD4C40;
+  color:#fff;
+  height:32px;
+  padding:5px 10px;
+  border-radius: 2px;
+
+}
+#guest_rooms>ul.op>li{
+  background: #fff;
+  border: 1px dashed #ddd;
+  border-top: 0;
+  text-align: center;
+
+}
+/*客房预订*/
+#guest_rooms>ul.rooms_type{
+  width:100%;
+  border-top:3px solid #ddd;
+  overflow:hidden;
+}
+#guest_rooms>ul.rooms_type>li{
+  float: left;
+  width: 199px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #666;
+  font-weight: bold;
+  text-align: center;
+
+}
+#room-list>li{
+  border-top:1px solid #ddd;
+  padding:20px 0;
+}
+#room-list>li>ul.room_detail{
+  overflow:hidden;
+  font-size:18px;
+  color:#000;
+}
+#room-list>li>ul.room_detail>li{
+  float:left;
+  width:199px;
+  line-height:148px;
+
+  text-align: center;
+}
+
+#room-list>li>ul.room_detail>li>a{
+  display:block;
+  position:relative;
+  margin:0 auto;
+}
+#room-list>li>ul.room_detail>li>a>img{
+  width:195px;
+  padding:10px;
+}
+#room-list>li>ul.room_detail>li p.sub_txt{
+  height: 30px;
+  color: #fff;
+  width: 97%;
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  left: 12px;
+  bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+}
+#room-list>li>ul.room_detail>li>p.sub_txt>a{
+  display: inline-block;
+  color:#fff;
+  font-size:16px;
+}
+#room-list>li>ul.room_detail>li>div.text{
+  padding:0 10px;
+}
+#room-list>li>ul.room_detail>li>input{
+  width:100px;
+  height:30px;
+  background:#DD4C40;
+  border:none;
+  color:#fff;
+  font-size:18px;
+  line-height:30px;
+  cursor: pointer;
+}
+#room-list>li>ul.room_detail>li>input:hover,#room-list>li>ul.room_detail>li>input.hover{
+  background:#DD4C40;
+  color:#fff;
+}
+#room-list>li>ul.room_detail>li>b{
+  color:#DD4C40;
+  font-weight:bold;
+}
+/*列表菜单*/
+#listbox{
+  width:230px;
+  margin:0 auto;
+  font-size:16px;
+}
+
+#listbox>ul{
+  float:left;
+}
+#listbox>ul>li{
+  float:left;
+  margin:0 10px;
+}
+#listbox>ul>li>a{
+  font-weight:bold;
+}
+#listbox>ul>li.current>a,#listbox>ul>li>a:hover{
+  color:#DD4C40;
+}
+#listbox>span{
+  float: left;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #625C5B;
+  border-radius: 50%;
+  line-height: 20px;
+  margin:0 10px;
+  cursor:pointer;
+}
+#listbox>span>b.left{
+  display: block;
+  width: 0px;
+  height: 0px;
+  border: 5px solid transparent;
+  border-right: 5px solid #625C5B;
+  margin: 5px 1px;
+}
+#listbox>span>b.right{
+  display: block;
+  width: 0px;
+  height: 0px;
+  border: 5px solid transparent;
+  border-left: 5px solid #625C5B;
+  margin: 5px 8px;
+}
+
+.booking_tab{
+  font-size:16px;
+  padding:5px;
+  /*border-bottom: 1px solid #ddd;*/
+}
+.booking_tab>span{
+  display:inline-block;
+  width:10px;
+  height:10px;
+  margin-right: 5px;
+  /*vertical-align: middle;*/
+  border-radius: 50%;
+  border:2px solid #DD4C40;
+}
+#r_msg{
+  border: 1px solid #ddd;
+  margin:10px 0;
+}
+#r_msg>div{
+  padding:10px;
+  background:rgba(233, 236, 233, 0.82);;
+}
+.all-view{
+  padding:0 0 10px  10px;
+}
+#room_loot{
+  border:1px solid #ddd;
+  margin-top:20px;
+}
+div.content{
+  border-top:1px solid #eee;
+  padding:0 10px ;
+}
+div.content>div.text-group{
+  padding:10px 0;
+  line-height:25px;
+}
+div.content>div.text-group>span.label{
+  float:left;
+  margin-right: 10px;
+}
+div.content>div.text-group>span.label>i{
+  display: inline-block;
+  width:15px;
+  height:15px;
+  margin-right: 3px;
+  background:url(../images/bg_hotel_icon.png) no-repeat -6px -403px;
+}
+div.content>div.text-group>div.service{
+  float:left;
+  width:1090px;
+
+}
+div.content>div.text-group>div.service>span{
+  margin-right: 10px;
+}
+#fa{
+  border:1px solid #ddd;
+  float:left;
+  width:720px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#zc{
+  width:460px;
+  border:1px solid #ddd;
+  float:left;
+  margin-bottom: 20px;
+}
+#zc>div.content>div.text-group>div.service{
+  width:350px;
+}
+#zc>div.content>div.text-group>span{
+  width:70px;
+  text-align: center;
+}
+
+/*******/
+#pro_list{
+  text-align: center;
+  width:98%;
+  margin:0 auto;
+  border-collapse: collapse;
+}
+#pro_list thead{
+  background: #ddd;
+  line-height: 25px;
+}
+#pro_list>tbody td>input{
+  width:80px;
+  height:30px;
+  background:#DD4C40;
+  border:none;
+  color:#fff;
+  font-size:18px;
+  border-radius: 3px;
+  line-height:30px;
+  cursor: pointer;
+}
+#pro_list tbody td{
+  border:1px solid #ddd;
+  padding:10px;
+  border-top:0;
+}
+#pro_list tbody td:first-child{
+  border-left:0;
+}
+#pro_list tbody td:last-child{
+  border-right:0;
+}
+#pro_list tbody td b,#pro_list tbody td span{
+  color:#DD4C40;
+}
+/*用户评价*/
+#user_views{
+  margin-top:10px;
+  font-size:16px;
+  font-family: "Microsoft Yahei", "微软雅黑";
+  border:1px solid #ddd;
+}
+#user_views>ul.user_list{
+  border-top:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+  padding:5px ;
+}
+#user_views>ul.user_list>li{
+  overflow:hidden;
+  font-size: 14px;
+  color: #606060;
+  line-height:24px;
+  margin:10px 0;
+}
+#user_views>ul.user_list>li.core1>div{
+  float:left;
+  width:145px;
+  height:24px;
+  background:url(../images/hotel/big_star_on.png) no-repeat;
+}
+#user_views>ul.user_list>li.core1>span{
+  float:left;
+  margin:0 20px;
+}
+#user_views  li span>b{
+
+  font-size: 25px;
+  color: #eb0000;
+}
+#user_views>ul.user_list>li>div{
+  float:left;
+  margin: 0 5px ;
+}
+#user_views>ul.user_list>li>div>span{
+  float:left;
+}
+span.star{
+  display:block;
+  width:90px;
+  height:15px;
+  background:url(../images/hotel/small_star_on.png) no-repeat;
+  vertical-align:middle;
+  margin:2px 10px;
+}
+/*用户评价区*/
+#user_views>ul.user_view>li{
+  border-top:1px solid #F2F2F2;
+  margin:10px 0;
+
+}
+#user_views>ul.user_view>li:last-child{
+  border-bottom:1px solid #F2F2F2;
+}
+#user_views>ul.user_view ul.view>li>div{
+  float:left;
+  width:390px;
+}
+#user_views>ul.user_view ul.view>li{
+  line-height:24px;
+  overflow:hidden;
+  padding:10px;
+}
+#user_views>ul.user_view ul.view>li>div>span{
+  float:left;
+}
+#user_views>ul.user_view ul.view>li>div>b{
+  color:#EB0000;
+}
+#user_views>ul.user_view ul.view>li.reply{
+  background:#E8E8E8;
+}
+#user_views>ul.user_view ul.view>li.reply>b{
+  color: #eb0000;
+}
+#user_views>div.all-view>a{
+  color:#eb0000;
+}
+/***/
+
